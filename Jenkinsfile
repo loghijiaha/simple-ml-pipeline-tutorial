@@ -1,6 +1,9 @@
 pipeline {
     agent {
-        docker { image 'frolvlad/alpine-glibc:alpine-3.12' }
+        docker { 
+                image 'maven:3-alpine' 
+                args '-v /root/.m2:/root/.m2' 
+               }
     }
     stages {
         stage('Build') { 
