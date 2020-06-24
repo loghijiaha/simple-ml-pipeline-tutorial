@@ -1,9 +1,6 @@
 pipeline {
     agent {
-        docker {
-            image 'frolvlad/alpine-miniconda3' 
-            args 'python -c 'print("Hello World")'' 
-        }
+        docker { image 'frolvlad/alpine-miniconda3' }
     }
     stages {
         stage('Build') { 
