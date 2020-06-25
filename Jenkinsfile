@@ -4,8 +4,14 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'echo "hi"' 
+                step([$class: 'IPythonBuilder', parserType: 'file', filePath: "train_model.ipynb"])
             }
         }
+        stage('Predict') { 
+            steps {
+                step([$class: 'IPythonBuilder', parserType: 'file', filePath: "predict_model.ipynb"])
+            }
+        }
+        
     }
 }
