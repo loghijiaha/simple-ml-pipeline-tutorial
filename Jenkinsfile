@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'frolvlad/alpine-miniconda3' 
+        }
+    }
     
     stages {
         stage('Build') { 
