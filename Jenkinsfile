@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'frolvlad/alpine-miniconda3' 
+            image 'alpine:3.7' 
         }
     }
     
