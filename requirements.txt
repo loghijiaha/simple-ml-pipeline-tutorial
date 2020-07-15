@@ -5,5 +5,3 @@ numpy
 scipy
 pandas
 sklearn
-pickle
-
