@@ -3,4 +3,5 @@ protobuf
 grpcio
 numpy
 scipy
+pandas
 
