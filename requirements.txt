@@ -4,4 +4,6 @@ grpcio
 numpy
 scipy
 pandas
+sklearn
+pickle
 
