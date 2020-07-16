@@ -1,12 +1,12 @@
 pipeline {
     agent any
+       
     stages {
-        stage('Prepare') { 
+         stage('Prepare') { 
             steps {
                 sh 'pip install -r requirements.txt'
             }
         }
-    stages {
         stage('Build') { 
             steps {
                 step([$class: 'IPythonBuilder', parserType: 'file', filePath: "train_model.ipynb"])
