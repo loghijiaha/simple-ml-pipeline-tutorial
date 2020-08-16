@@ -1,2 +1,2 @@
 # simple-ml-pipeline-tutorial
-Only for demo puroses
+Only for demo purpose
